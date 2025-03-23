@@ -72,7 +72,7 @@ pipeline {
                }
                failure{
 				emailext (
-					to: 'binaykanthal2995@gmail.com'
+					to: 'binaykanthal2995@gmail.com',
                     subject: "Jenkins Build Success - ${projectName} #${buildNumber}",
                     body: """
                         Hello Team,<br><br>
