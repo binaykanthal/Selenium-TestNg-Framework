@@ -50,7 +50,7 @@ pipeline {
                 def reportUrl = "http://localhost:8080/job/OrangeHRM_Build/HTML_20Extent_20Report/"
 			success{
                 emailext (
-					to: 'binaykanthal2995@gmail.com'
+					to: 'binaykanthal2995@gmail.com',
                     subject: "Jenkins Build Success - ${projectName} #${buildNumber}",
                     body: """
                         Hello Team,<br><br>
